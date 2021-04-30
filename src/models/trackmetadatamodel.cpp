@@ -195,6 +195,7 @@ QVariant TrackMetadataModel::data(const QModelIndex &index, int role) const
         case DataTypes::IsDirectoryRole:
         case DataTypes::IsPlayListRole:
         case DataTypes::FilePathRole:
+        case DataTypes::HasChildrenRole:
             break;
         }
         break;
@@ -569,6 +570,7 @@ QString TrackMetadataModel::nameFromRole(DataTypes::ColumnsRoles role)
     case DataTypes::IsDirectoryRole:
     case DataTypes::IsPlayListRole:
     case DataTypes::FilePathRole:
+    case DataTypes::HasChildrenRole:
         break;
     }
     return result;

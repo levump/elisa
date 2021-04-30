@@ -40,7 +40,7 @@ MediaPlayer2Player::MediaPlayer2Player(MediaPlayListProxyModel *playListControle
                                                           QStringLiteral("Update"))),
       mShowProgressOnTaskBar(showProgressOnTaskBar)
 {
-    if (!m_playListControler) {
+    if (m_playListControler != nullptr) {
         return;
     }
 

@@ -176,7 +176,7 @@ void ElisaConfigurationDialog::setEmbeddedView(ElisaUtils::PlayListEntryType emb
     }
 
     mEmbeddedView = embeddedView;
-    QTimer::singleShot(0, [this](){ Q_EMIT embeddedViewChanged(); });
+    QTimer::singleShot(0, [this]{ Q_EMIT embeddedViewChanged(); });
 
     setDirty();
 }

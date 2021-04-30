@@ -6749,7 +6749,6 @@ qulonglong DatabaseInterface::internalInsertTrack(const DataTypes::TrackDataType
                                trackPath, oneTrack.hasEmbeddedCover() ? QUrl{} : albumCover);
 
     auto oldAlbumId = albumId;
-
     auto existingTrackId = internalTrackIdFromFileName(oneTrack.resourceURI());
     bool isModifiedTrack = (existingTrackId != 0);
 

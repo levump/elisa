@@ -141,7 +141,7 @@ public Q_SLOTS:
                  ElisaUtils::PlayListEnqueueMode enqueueMode,
                  ElisaUtils::PlayListEnqueueTriggerPlay triggerPlay);
 
-    void setRepeatMode(Repeat value);
+    void setRepeatMode(MediaPlayListProxyModel::Repeat value);
 
     void setShufflePlayList(bool value);
 
